@@ -21,11 +21,13 @@ variable "tags" {
 variable "access_key" {
   default = ""
   type    = string
+  sensitive = true
 }
 
 variable "access_secret" {
   default = ""
   type    = string
+  sensitive = true
 }
 
 variable "notification_email" {
