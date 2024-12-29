@@ -1,6 +1,10 @@
 # global config
-notification_email = "sle-ch@it-lew.de"
+notification_email = "test@test.ch"
 create_notification = false
+
+### AWS Access
+access_key = "<<Your_Key>>"
+access_secret = "<<YOUR_SECRET>>"
 
 # activate notifications
 create_glue_notification = false

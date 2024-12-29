@@ -18,6 +18,16 @@ variable "tags" {
   type = string
 }
 
+variable "access_key" {
+  default = ""
+  type    = string
+}
+
+variable "access_secret" {
+  default = ""
+  type    = string
+}
+
 variable "notification_email" {
   default = ""
   description = "Email for notifications"
