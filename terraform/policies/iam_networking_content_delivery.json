@@ -1,0 +1,10 @@
+
+    {
+      "Sid": "AllowCloudFrontAndRoute53FullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "cloudfront:*",
+        "route53:*"
+      ],
+      "Resource": "*"
+    }

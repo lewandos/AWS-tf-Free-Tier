@@ -1,0 +1,13 @@
+
+    {
+      "Sid": "AllowLambdaReadAndInvoke",
+      "Effect": "Allow",
+      "Action": [
+        "ec2:*",
+        "lambda:*",
+        "ecr:*",
+        "elasticloadbalancing:*"
+      ],
+      "Resource": "*"
+    }
+

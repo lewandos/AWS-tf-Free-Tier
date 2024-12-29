@@ -1,0 +1,13 @@
+
+    {
+      "Sid": "AllowAllApplicationAccess",
+      "Effect": "Allow",
+      "Action": [
+        "mq:*",
+        "sqs:*",
+        "swf:*",
+        "states:*",
+        "appsync:*"
+      ],
+      "Resource": "*"
+    }

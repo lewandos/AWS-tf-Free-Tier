@@ -1,0 +1,8 @@
+
+    {
+      "Sid": "AllowGameLiftFullAccess",
+      "Effect": "Allow",
+      "Action": "gamelift:*",
+      "Resource": "*"
+    }
+

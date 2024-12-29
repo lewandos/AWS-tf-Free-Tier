@@ -1,0 +1,15 @@
+
+    {
+      "Sid": "AllowDBFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "rds:*",
+        "dynamodb:*",
+        "elasticache:*",
+        "dms:*",
+        "clouddirectory:*",
+        "sdb:*"
+      ],
+      "Resource": "*"
+    }
+

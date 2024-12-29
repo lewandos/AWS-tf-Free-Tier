@@ -1,0 +1,17 @@
+
+    {
+      "Sid": "AllowDevFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "cloudwatch:*",
+        "amplify:*",
+        "codebuild:*",
+        "codecommit:*",
+        "codepipeline:*",
+        "xray:*",
+        "codeartifact:*",
+        "codecatalyst:*"
+      ],
+      "Resource": "*"
+    }
+

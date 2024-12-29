@@ -1,0 +1,11 @@
+
+    {
+      "Sid": "AllowElasticTranscoderIvsMediaConnectFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "elastictranscoder:*",
+        "ivs:*",
+        "mediaconnect:*"
+      ],
+      "Resource": "*"
+    }

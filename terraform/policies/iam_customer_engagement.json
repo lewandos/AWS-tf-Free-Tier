@@ -1,0 +1,11 @@
+
+    {
+      "Sid": "AllowCEFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "ses:*",
+        "connect:*"
+      ],
+      "Resource": "*"
+    }
+

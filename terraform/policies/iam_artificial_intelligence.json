@@ -1,0 +1,18 @@
+
+    {
+      "Sid": "AllowAllAIActions",
+      "Effect": "Allow",
+      "Action": [
+        "codewhisperer:*",
+        "comprehend:*",
+        "lex:*",
+        "polly:*",
+        "rekognition:*",
+        "transcribe:*",
+        "translate:*",
+        "sagemaker:*",
+        "healthlake:*"
+      ],
+      "Resource": "*"
+    }
+

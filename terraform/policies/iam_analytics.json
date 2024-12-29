@@ -1,0 +1,12 @@
+    {
+      "Sid": "AllowFullAWSAnalyticsAccess",
+      "Effect": "Allow",
+      "Action": [
+        "es:*",
+        "datapipeline:*",
+        "glue:*",
+        "dataexchange:*"
+      ],
+      "Resource": "*"
+    }
+

@@ -1,0 +1,12 @@
+
+    {
+      "Sid": "AllowEfsEbsStorageGatewayFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "elasticfilesystem:*",
+        "ec2:*",
+        "storagegateway:*"
+      ],
+      "Resource": "*"
+    }
+

@@ -1,0 +1,12 @@
+
+    {
+      "Sid": "AllowIoTFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "iot:*",
+        "greengrass:*",
+        "iotevents:*"
+      ],
+      "Resource": "*"
+    }
+

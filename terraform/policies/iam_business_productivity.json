@@ -1,0 +1,23 @@
+
+    {
+      "Sid": "AllowChimeBasicUsage",
+      "Effect": "Allow",
+      "Action": [
+        "chime:Get*",
+        "chime:List*",
+
+        "chime:CreateChannel",
+        "chime:CreateChannelMembership",
+        "chime:CreateChannelModerator",
+        "chime:DeleteChannelMembership",
+        "chime:DeleteChannelModerator",
+        "chime:SendChannelMessage",
+
+        "chime:CreateMeeting",
+        "chime:CreateAttendee",
+        "chime:DeleteMeeting",
+        "chime:GetMeeting",
+        "chime:GetAttendee"
+      ],
+      "Resource": "*"
+    }

@@ -1,0 +1,13 @@
+
+    {
+      "Sid": "AllowMigrationServicesFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "dms:*",
+        "mgh:*",
+        "discovery:*",
+        "mgn:*"
+      ],
+      "Resource": "*"
+    }
+

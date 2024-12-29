@@ -1,0 +1,12 @@
+
+    {
+      "Sid": "AllowS3CloudDirectoryEventBridgeFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "s3:*",
+        "clouddirectory:*",
+        "events:*"
+      ],
+      "Resource": "*"
+    }
+

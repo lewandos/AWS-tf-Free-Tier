@@ -1,0 +1,14 @@
+
+    {
+      "Sid": "AllowFrontendFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "sns:*",
+        "apigateway:*",
+        "cognito-identity:*",
+        "cognito-idp:*",
+        "cognito-sync:*"
+      ],
+      "Resource": "*"
+    }
+

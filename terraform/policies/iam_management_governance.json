@@ -1,0 +1,19 @@
+
+    {
+      "Sid": "AllowFullAccessManagementdServices",
+      "Effect": "Allow",
+      "Action": [
+        "license-manager:*",
+        "opsworks-cm:*",
+        "wellarchitected:*",
+        "servicecatalog:*",
+        "cloudtrail:*",
+        "ssm:*",
+        "cloudformation:*",
+        "controltower:*",
+        "organizations:*",
+        "aps:*"
+      ],
+      "Resource": "*"
+    }
+

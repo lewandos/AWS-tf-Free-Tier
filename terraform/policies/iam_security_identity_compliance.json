@@ -1,0 +1,14 @@
+
+    {
+      "Sid": "AllowKmsSecurityHubWafRamFullAccess",
+      "Effect": "Allow",
+      "Action": [
+        "kms:*",
+        "securityhub:*",
+        "waf:*",
+        "wafv2:*",
+        "ram:*"
+      ],
+      "Resource": "*"
+    }
+
