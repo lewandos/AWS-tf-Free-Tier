@@ -17,24 +17,24 @@ resource "aws_iam_role_policy_attachment" "deny_attachment" {
 }
 
 resource "aws_iam_group_policy_attachment" "free_tier_attach" {
-  group      = aws_iam_group.test_group.name
+  group = aws_iam_group.group.name
   policy_arn = aws_iam_policy.free_tier_policy.arn
 }
 
 ###############################################################################
 # Create the IAM User
 ###############################################################################
-resource "aws_iam_user" "test_user" {
-  name = "test-user"
+resource "aws_iam_user" "user" {
+  name = var.user_name
 }
 
-resource "aws_iam_group" "test_group" {
-  name = "test-group"
+resource "aws_iam_group" "group" {
+  name = var.group_name
 }
 
-resource "aws_iam_user_group_membership" "add_testuser" {
-  groups = [aws_iam_group.test_group.name]
-  user = aws_iam_user.test_user.name
+resource "aws_iam_user_group_membership" "testuser" {
+  groups = [aws_iam_group.group.name]
+  user = aws_iam_user.user.name
 }
 
 ###############################################################################
@@ -48,7 +48,7 @@ data "aws_iam_policy_document" "assume_role_trust_policy" {
     principals {
       type        = "AWS"
       identifiers = [
-        aws_iam_user.test_user.arn
+        aws_iam_user.user.arn
       ]
     }
 
@@ -101,6 +101,6 @@ resource "aws_iam_policy" "assume_test_role_policy" {
 # Attach the assume-role policy to the user
 ###############################################################################
 resource "aws_iam_user_policy_attachment" "user_assume_test_role_attachment" {
-  user       = aws_iam_user.test_user.name
+  user = aws_iam_user.user.name
   policy_arn = aws_iam_policy.assume_test_role_policy.arn
 }

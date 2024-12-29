@@ -8,11 +8,6 @@ variable "environment" {
   type = string
 }
 
-variable "name" {
-  default = "lewandos"
-  type = string
-}
-
 variable "tags" {
   default = "development"
   type = string
@@ -28,6 +23,16 @@ variable "access_secret" {
   default = ""
   type    = string
   sensitive = true
+}
+
+variable "user_name" {
+  default = "test-user"
+  type    = string
+}
+
+variable "group_name" {
+  default = "test-group"
+  type    = string
 }
 
 variable "notification_email" {
