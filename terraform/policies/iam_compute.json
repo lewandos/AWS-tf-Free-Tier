@@ -4,6 +4,7 @@
       "Effect": "Allow",
       "Action": [
         "ec2:*",
+        "iam:*",
         "lambda:*",
         "ecr:*",
         "elasticloadbalancing:*"
