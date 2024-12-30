@@ -63,7 +63,7 @@ AWS-tf-Free-Tier/
 
 ```bash
 git clone https://github.com/lewandos/AWS-tf-Free-Tier.git
-cd AWS-tf-Free-Tier
+cd AWS-tf-Free-Tier/terraform
 ```
 
 ### Initialize and Apply Terraform
